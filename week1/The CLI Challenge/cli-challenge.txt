@@ -1,0 +1,39 @@
+1. How do I create a hidden file or folder? How do I display it in the CLI?
+
+$ touch .fileName.txt
+to create a hidden file in Linux or Git Bash as it also uses Linux command yet it remains visible in Windows OS GUI
+
+$ attrib +h .fileName.txt
+Windows OS does has different way to hide file so this command also hides the file in Windows OS
+
+$ attrib -h .fileName.txt
+to remove the hidden attribute from the file in Windows OS so it will be visible in GUI
+
+$ touch .folderName
+to create a hidden folder in Linux or Git Bash yet it remains visible in Windows OS GUI
+
+$ attrib +h .folderName
+to hide the folder in Windows OS
+
+$ attrib -h .folderName
+to remove the hidden attribute from the file in Window OS so it will be visible in GUI
+
+$ ls -a
+to display hidden as well as non-hidden files Git Bash
+
+
+
+2. How do I create multiple nested directories, like /c/Users/myusername/these/folders/are/just/for/fun?
+
+$ mkdir -p /just/for/fun
+in the current directory, this command will create multiple nested subfolders in the order of 'just/for/fun'
+
+
+
+3. How do I append a message to a file, without a newline character, so the output would be:
+first message
+second message
+
+$ echo "first message" >> fileName.txt
+$ echo "second message" >> fileName.txt
+these commands will append the text in a new line in the file
