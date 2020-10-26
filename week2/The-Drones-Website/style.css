@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Quicksand:wght@500&display=swap");
+
+:root {
+  --heading-font: "Krona One", sans-serif;
+  --normal-font: "Quicksand", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #eeeeee;
+  background-image: linear-gradient(
+      rgba(100, 100, 100, 0.1) 0.1em,
+      transparent 0.1em
+    ),
+    linear-gradient(90deg, rgba(100, 100, 100, 0.1) 0.1em, transparent 0.1em);
+  background-size: 1em 1em;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 1rem 0 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  padding: 4rem 0 1rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+p {
+  font-family: var(--normal-font);
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  clear: both;
+}
+
+#grid-floats {
+  width: 100%;
+  float: left;
+}
+
+#grid-floats .grid-item {
+  width: 22%;
+  float: left;
+}
+
+#grid-floats .grid-item:nth-child(1) {
+  width: 47%;
+}
+
+#grid-floats .grid-item:nth-child(4),
+#grid-floats .grid-item:nth-child(12) {
+  clear: left;
+}
+
+#grid-flex {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#grid-flex .grid-item {
+  flex-basis: 22%;
+}
+
+#grid-flex .grid-item:nth-child(1) {
+  flex-basis: 47%;
+}
+
+.grid-item > img {
+  max-width: 100%;
+}
+
+.grid-item {
+  margin: 1.5%;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.6);
+  transition: box-shadow 1s;
+}
+
+.grid-item:hover {
+  box-shadow: 0px 5px 20px -2px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  #grid-floats .grid-item:nth-child(1),
+  #grid-floats .grid-item:nth-child(2) {
+    width: 47%;
+  }
+
+  #grid-floats .grid-item {
+    width: 30.33%;
+  }
+
+  #grid-floats .grid-item:nth-child(4) {
+    clear: unset;
+  }
+
+  #grid-floats .grid-item:nth-child(3),
+  #grid-floats .grid-item:nth-child(6),
+  #grid-floats .grid-item:nth-child(9) {
+    clear: left;
+  }
+
+  #grid-flex .grid-item {
+    flex-basis: 30.33%;
+  }
+
+  #grid-flex .grid-item:nth-child(1),
+  #grid-flex .grid-item:nth-child(2) {
+    flex-basis: 47%;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  #grid-floats .grid-item {
+    width: 97% !important;
+  }
+
+  #grid-flex .grid-item {
+    flex-basis: 97% !important;
+  }
+
+  .grid-item {
+    margin-bottom: 5%;
+  }
+}
