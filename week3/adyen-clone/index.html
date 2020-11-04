@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+
+    <!-- Compiled and minified Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Adyen | Homepage Clone with Bootstrap</title>
+  </head>
+  <body>
+    <div
+      class="adyen-alert adyen-bg-grad alert alert-dismissible text-center border-0 rounded-0 text-white mb-0 py-4"
+      role="alert"
+    >
+      <span class="mr-3"
+        >Are you ready for PSD2? Learn how our 3D Secure solution can help
+        you.</span
+      >
+      <a href="#" class="adyen-link"
+        >Learn more <i class="fas fa-angle-right"></i
+      ></a>
+
+      <button
+        type="button"
+        class="close text-white"
+        data-dismiss="alert"
+        aria-label="Close"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <header class="adyen-header">
+      <div class="container">
+        <nav class="navbar navbar-expand-xl navbar-light bg-white py-3 py-xl-0">
+          <a class="navbar-brand p-lg-0 mr-4" href="#">
+            <img
+              src="media/adyen-header-logo-green.svg"
+              width="100"
+              alt=""
+              loading="lazy"
+            />
+          </a>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse my-3 my-xl-0"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item mx-2 dropdown">
+                <a
+                  class="nav-link px-0 py-1 px-xl-1 py-xl-4 dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Our solution
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link px-0 py-1 px-xl-1 py-xl-4" href="#"
+                  >Customers</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link px-0 py-1 px-xl-1 py-xl-4" href="#"
+                  >About us</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link px-0 py-1 px-xl-1 py-xl-4" href="#"
+                  >Documentation</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item mx-2">
+                <a class="nav-link px-0 py-1 px-xl-3 py-xl-4" href="#">
+                  <i class="fas fa-search"></i>
+                </a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link px-0 py-1 px-xl-1 py-xl-4" href="#"
+                  >Contact us</a
+                >
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link px-0 py-1 px-xl-1 py-xl-4" href="#"
+                  >Log in</a
+                >
+              </li>
+              <li class="nav-item mx-2 d-flex">
+                <button
+                  type="button"
+                  class="btn btn-default btn-block adyen-btn align-self-center text-white mt-3 mb-4 my-xl-0"
+                >
+                  Create an account
+                </button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="adyen-banner">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col col-12 col-md-5 mb-4 mb-md-0">
+            <h1 class="display-4 font-weight-bold mb-4">
+              Accept payments everywhere
+            </h1>
+            <p class="adyen-body-big mb-4">
+              Meet the payments platform built for any business and every
+              customer journey.
+            </p>
+            <a
+              href="#"
+              class="btn btn-default adyen-btn text-white font-weight-bold px-3 py-2"
+              >Start your journey with us</a
+            >
+          </div>
+          <div class="col col-12 col-md-6 offset-md-1">
+            <video class="img-fluid" autoplay muted loop>
+              <source src="media/anthem-2-20-1.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+        <div class="row align-items-center py-5 mb-4">
+          <div class="col col-4 col-md-2">
+            <img src="media/uber-logobar-svg.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="col col-4 col-md-2">
+            <img src="media/logobar-mango-black.png" class="img-fluid" alt="" />
+          </div>
+          <div class="col col-4 col-md-2">
+            <img
+              src="media/booking-com-logobar-svg.svg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col col-4 col-md-2">
+            <img src="media/ebay-logobar.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="col col-4 col-md-2">
+            <img
+              src="media/happy-socks-logobar-svg.svg"
+              class="img-fluid"
+              alt=""
+            />
+          </div>
+          <div class="col col-4 col-md-2">
+            <img src="media/spotify-logobar-svg.svg" class="img-fluid" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="adyen-why">
+      <div class="container pt-5">
+        <div class="row text-center py-5 mb-5">
+          <div class="col col-12 col-md-4">
+            <img src="media/icon_world_green.svg" width="40" alt="" />
+            <h2 class="my-4">Growth</h2>
+            <p class="adyen-body-big mb-4">
+              Expand into new markets with local acquiring and payment methods.
+            </p>
+            <a href="#" class="adyen-link"
+              >Payment methods <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+          <div class="col col-12 col-md-4 my-5 my-md-0 py-4 py-md-0">
+            <img
+              src="media/revenue-protect-icon-green-svg.svg"
+              width="40"
+              alt=""
+            />
+            <h2 class="my-4">Revenue</h2>
+            <p class="adyen-body-big mb-4">
+              Optimize each transaction, increase conversions, and drive
+              revenue.
+            </p>
+            <a href="#" class="adyen-link"
+              >Revenue Accelerate <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+          <div class="col col-12 col-md-4">
+            <img src="media/issuing-icon-svg-green.svg" width="40" alt="" />
+            <h2 class="my-4">Real partnership</h2>
+            <p class="adyen-body-big mb-4">
+              Access expert advice and support from a dedicated team of payments
+              specialists.
+            </p>
+            <a href="#" class="adyen-link"
+              >Start your journey <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="row py-5 bg-white"></div>
+      </div>
+    </section>
+
+    <section class="adyen-what pt-1 pb-5">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col col-12 col-md-6 offset-md-3">
+            <h2 class="h1 mb-4">Accept payments across all sales channels</h2>
+            <p class="adyen-body-big mb-4">
+              Let your shoppers use their preferred payment types, via a
+              personalized checkout experience, online, in app, or in store, no
+              matter where in the world they are.
+            </p>
+            <p>
+              <a href="#" class="adyen-link"
+                >More about connected sales channels
+                <i class="fas fa-angle-right"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+        <div class="row py-5">
+          <div class="col col-12 col-md-6">
+            <img
+              src="media/homepage-payment-methods-EN.gif"
+              class="img-fluid rounded mb-4"
+              alt=""
+            />
+            <h5>Online and in-app payments</h5>
+            <p class="adyen-body-big mb-4">
+              Accept cards, mobile wallets and more on any digital channel or
+              device. Every checkout is fully optimized and geared for more
+              conversions.
+            </p>
+            <p>
+              <a href="#" class="adyen-link">
+                More about online payments <i class="fas fa-angle-right"></i>
+              </a>
+            </p>
+          </div>
+          <div class="col col-12 col-md-6">
+            <img src="media/Group 50378.jpg" class="img-fluid mb-4" alt="" />
+            <h5>Payment terminals and in-store POS setups</h5>
+            <p class="adyen-body-big mb-4">
+              Enhance in-person payment experiences with a terminal for any
+              need. It’s easy to set-up and comes packed with features.
+            </p>
+            <p>
+              <a href="#" class="adyen-link">
+                More about POS payments <i class="fas fa-angle-right"></i>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="adyen-how adyen-bg text-white">
+      <div class="container py-5">
+        <div class="row align-items-center my-5 my-md-4">
+          <div class="col col-12 col-md-6">
+            <video class="img-fluid" autoplay muted loop>
+              <source
+                src="media/Adyen - The payments platform built for growth.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <div class="col col-12 col-md-5">
+            <h2 class="h1 my-4">Approve more transactions</h2>
+            <p class="lead">
+              Experience more approvals on every single payment with local and
+              global payment processing, data-driven optimizations, and powerful
+              risk management. All within a fully connected single payments
+              system.
+            </p>
+          </div>
+        </div>
+        <div class="row mb-4">
+          <div class="col col-12 col-md-3 my-3 my-md-0">
+            <img
+              src="media/payment-methods-icon-20-white.svg"
+              width="20"
+              alt=""
+            />
+            <h5 class="my-4">Payment Methods</h5>
+            <p>Offer the payment methods your customers know and trust.</p>
+            <p class="my-4">
+              <a href="#" class="adyen-link"
+                >Learn more <i class="fas fa-angle-right"></i
+              ></a>
+            </p>
+          </div>
+          <div class="col col-12 col-md-3 my-3 my-md-0">
+            <img
+              src="media/global-acquiring-icon-20-white.svg"
+              width="20"
+              alt=""
+            />
+            <h5 class="my-4">Local connections</h5>
+            <p>
+              Global payment processing tailored to your business for lower
+              fees.
+            </p>
+            <p class="my-4">
+              <a href="#" class="adyen-link"
+                >Learn more <i class="fas fa-angle-right"></i
+              ></a>
+            </p>
+          </div>
+          <div class="col col-12 col-md-3 my-3 my-md-0">
+            <img
+              src="media/revenue-optimization-icon-20-white.svg"
+              width="20"
+              alt=""
+            />
+            <h5 class="my-4">Transaction optimizations</h5>
+            <p>
+              Unlock more revenue using data and machine learning for every
+              payment.
+            </p>
+            <p class="my-4">
+              <a href="#" class="adyen-link"
+                >Learn more <i class="fas fa-angle-right"></i
+              ></a>
+            </p>
+          </div>
+          <div class="col col-12 col-md-3 my-3 my-md-0">
+            <img
+              src="media/revenue-protect-icon-20-white.svg"
+              width="20"
+              alt=""
+            />
+            <h5 class="my-4">Safety and security</h5>
+            <p>
+              Use a data-driven approach to block fraudsters and manage risk.
+            </p>
+            <p class="my-4">
+              <a href="#" class="adyen-link"
+                >Learn more <i class="fas fa-angle-right"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="adyen-customers overflow-hidden py-5">
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <div class="col col-12 col-md-6 mb-5 mb-md-0">
+            <h2 class="h1 my-4">Understand what your customers really want</h2>
+            <p class="lead">
+              Get a better understanding of your entire business with in-depth
+              insights and reporting all in one place.
+            </p>
+            <div class="row py-5">
+              <div class="col col-md-6">
+                <p><img src="media/rules-icon-20.svg" alt="" /></p>
+                <p class="h5">Daily tasks</p>
+                <p>Easily complete tasks like refunds.</p>
+              </div>
+              <div class="col col-md-6">
+                <p><img src="media/customer-insights-icon-20.svg" alt="" /></p>
+                <p class="h5">In-depth reports</p>
+                <p>Translate data into detailed reports.</p>
+              </div>
+            </div>
+            <p>
+              <a href="#" class="adyen-link"
+                >Learn more <i class="fas fa-angle-right"></i
+              ></a>
+            </p>
+          </div>
+          <div class="col col-12 col-md-5 offset-md-1">
+            <img src="media/Browser.png" class="adyen-img-dashboard" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="adyen-companies py-5">
+      <div class="container">
+        <div class="row my-4">
+          <div class="col col-12 col-md-8 offset-md-2 text-center">
+            <h2 class="h1 py-2">We work with companies with big ideas</h2>
+            <p class="py-2">
+              <a href="#" class="adyen-link"
+                >See who we're working with <i class="fas fa-angle-right"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+        <div class="row align-items-center my-4">
+          <div class="col col-12 col-md-6 mb-5 mb-md-0">
+            <video class="img-fluid" autoplay muted loop>
+              <source
+                src="media/Adyen - The payments platform built for growth_2.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <div class="col col-12 col-md-5 offset-md-1 mb-5 mb-md-0">
+            <p>
+              <img
+                src="media/lush-logo-horizontal-svg.svg"
+                width="160"
+                alt="Lush Fresh Handmade Cosmetics Logo"
+              />
+            </p>
+            <p class="lead">
+              "Working with the sales teams and account managers has been great.
+              They've helped us get to market with our LUSH Pay solution much
+              quicker than if we had tried to do it ourselves."
+            </p>
+            <a href="#" class="adyen-link"
+              ><i class="far fa-play-circle"></i> Watch video now</a
+            >
+          </div>
+        </div>
+        <div class="row my-5">
+          <div class="col col-12 col-md-4 mb-5 mb-md-0">
+            <img
+              src="media/hompage-16x9-brompton.jpg"
+              class="img-fluid pb-3"
+              alt="Brompton Picture"
+            />
+            <p class="adyen-body-small">BROMPTON</p>
+            <p class="adyen-body-big pb-1">
+              Making tracks with global payments
+            </p>
+            <a href="#" class="adyen-link"
+              >Read customer story <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+          <div class="col col-12 col-md-4 mb-5 mb-md-0">
+            <img
+              src="media/hompage-16x9-flixbus.jpg"
+              class="img-fluid pb-3"
+              alt="Flixbus Picture"
+            />
+            <p class="adyen-body-small">FLIXBUS</p>
+            <p class="adyen-body-big pb-1">The road to global expansion</p>
+            <a href="#" class="adyen-link"
+              >Read customer story <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+          <div class="col col-12 col-md-4">
+            <img
+              src="media/hompage-16x9-transferwise.jpg"
+              class="img-fluid pb-3"
+              alt="Transferwise Picture"
+            />
+            <p class="adyen-body-small">TRANSFERWISE</p>
+            <p class="adyen-body-big pb-1">4 questions with Wade Stokes</p>
+            <a href="#" class="adyen-link"
+              >Read customer story <i class="fas fa-angle-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="adyen-cta adyen-bg-action text-center text-white py-5">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col">
+            <h2 class="mb-4">Start your journey with Adyen today</h2>
+            <a href="#" class="btn btn-default adyen-btn-dark text-white"
+              >Create a test account</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="adyen-footer adyen-bg text-white py-5">
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col col-6 col-md-2 mb-5 mb-md-0">
+            <h6 class="mb-3"><a href="#">Adyen</a></h6>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#">About</a></li>
+              <li class="mb-2"><a href="#">Careers</a></li>
+              <li class="mb-2"><a href="#">Applicant Privacy Notice</a></li>
+              <li class="mb-2"><a href="#">Blog</a></li>
+              <li class="mb-2"><a href="#">Press & Media</a></li>
+              <li class="mb-2"><a href="#">Contact</a></li>
+              <li class="mb-2"><a href="#">Investor Relations</a></li>
+            </ul>
+          </div>
+          <div class="col col-6 col-md-2 mb-5 mb-md-0">
+            <h6 class="mb-3"><a href="#">Our solution</a></h6>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#">Partners</a></li>
+              <li class="mb-2"><a href="#">Pricing</a></li>
+              <li class="mb-2"><a href="#">Reporting</a></li>
+            </ul>
+          </div>
+          <div class="col col-6 col-md-2 mb-5 mb-md-0">
+            <h6 class="mb-3"><a href="#">Knowledge Hub</a></h6>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#">Support</a></li>
+              <li class="mb-2"><a href="#">Documentation</a></li>
+              <li class="mb-2"><a href="#">Info for shoppers</a></li>
+              <li class="mb-2"><a href="#">Tech blog</a></li>
+            </ul>
+          </div>
+          <div class="col col-6 col-md-2 mb-5 mb-md-0">
+            <h6 class="mb-3"><a href="#">Platform</a></h6>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#">Infrastructure</a></li>
+              <li class="mb-2"><a href="#">Certifications</a></li>
+              <li class="mb-2"><a href="#">Licenses</a></li>
+              <li class="mb-2"><a href="#">Terms & Conditions</a></li>
+              <li class="mb-2"><a href="#">Legal</a></li>
+            </ul>
+          </div>
+          <div class="col col-12 col-md-4 col-sm-8 mb-5 mb-md-0">
+            <h6 class="mb-3"><a href="#">Subscribe to our newsletter</a></h6>
+            <form>
+              <label class="sr-only" for="footerNewsletterEmail">Email</label>
+              <div class="input-group mb-2">
+                <input
+                  type="email"
+                  class="form-control bg-transparent text-white"
+                  id="footerNewsletterEmail"
+                  placeholder="Email"
+                  aria-describedby="footerNewsletterDisclaimer"
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-light px-3" type="button">
+                    <i class="fas fa-angle-right"></i>
+                  </button>
+                </div>
+              </div>
+              <small
+                id="footerNewsletterDisclaimer"
+                class="form-text text-muted"
+              >
+                By submitting this form, you acknowledge that you have reviewed
+                the terms of our
+                <a href="#" class="adyen-link">Privacy Statement</a> and consent
+                to the use of data in accordance therewith.
+              </small>
+            </form>
+            <div class="adyen-footer-social mt-4">
+              <a href="#" class="btn btn-outline-light mr-2">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="btn btn-outline-light mr-2">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="btn btn-outline-light mr-2">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row border-top mt-4 py-4 adyen-footer-sub">
+          <div class="col col-md-6 align-self-center">
+            <small>
+              <a href="#">Privacy</a> - <a href="#">Cookies</a> -
+              <a href="#">Disclaimer</a> - &copy; 2020 Adyen
+            </small>
+          </div>
+          <div class="col col-md-6 text-right">
+            <div class="btn-group dropup">
+              <button
+                type="button"
+                class="btn text-white dropdown-toggle"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Language: <strong>English</strong>
+              </button>
+              <div class="dropdown-menu dropdown-menu-right">
+                <button class="dropdown-item" type="button">Deutsch</button>
+                <button class="dropdown-item" type="button">Português</button>
+                <button class="dropdown-item" type="button">Français</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
