@@ -3,6 +3,7 @@
 :root {
   --heading-font: "Krona One", sans-serif;
   --normal-font: "Quicksand", sans-serif;
+  --col-spacing: 1.5%;
 }
 
 * {
@@ -75,16 +76,15 @@ section {
 }
 
 #grid-floats .grid-item {
-  width: 22%;
+  width: calc(25% - var(--col-spacing) * 2);
   float: left;
 }
 
 #grid-floats .grid-item:nth-child(1) {
-  width: 47%;
+  width: calc(50% - var(--col-spacing) * 2);
 }
 
-#grid-floats .grid-item:nth-child(4),
-#grid-floats .grid-item:nth-child(12) {
+#grid-floats .grid-item:nth-child(4n) {
   clear: left;
 }
 
@@ -95,11 +95,11 @@ section {
 }
 
 #grid-flex .grid-item {
-  flex-basis: 22%;
+  flex-basis: calc(25% - var(--col-spacing) * 2);
 }
 
 #grid-flex .grid-item:nth-child(1) {
-  flex-basis: 47%;
+  flex-basis: calc(50% - var(--col-spacing) * 2);
 }
 
 .grid-item > img {
@@ -107,7 +107,7 @@ section {
 }
 
 .grid-item {
-  margin: 1.5%;
+  margin: var(--col-spacing);
   background-color: #ffffff;
   padding: 1rem;
   border-radius: 10px;
@@ -120,42 +120,38 @@ section {
 }
 
 @media screen and (min-width: 600px) and (max-width: 1024px) {
-  #grid-floats .grid-item:nth-child(1),
-  #grid-floats .grid-item:nth-child(2) {
-    width: 47%;
+  #grid-floats .grid-item:nth-child(-n+2) {
+    width: calc(50% - var(--col-spacing) * 2);
   }
 
   #grid-floats .grid-item {
-    width: 30.33%;
+    width: calc((100% - (var(--col-spacing) * 6)) / 3);
   }
 
-  #grid-floats .grid-item:nth-child(4) {
+  #grid-floats .grid-item:nth-child(4n) {
     clear: unset;
   }
 
-  #grid-floats .grid-item:nth-child(3),
-  #grid-floats .grid-item:nth-child(6),
-  #grid-floats .grid-item:nth-child(9) {
+  #grid-floats .grid-item:nth-child(3n) {
     clear: left;
   }
 
-  #grid-flex .grid-item {
-    flex-basis: 30.33%;
+  #grid-flex .grid-item:nth-child(-n+2) {
+    flex-basis: calc(50% - var(--col-spacing) * 2);
   }
 
-  #grid-flex .grid-item:nth-child(1),
-  #grid-flex .grid-item:nth-child(2) {
-    flex-basis: 47%;
+  #grid-flex .grid-item {
+    flex-basis: calc((100% - (var(--col-spacing) * 6)) / 3);
   }
 }
 
 @media screen and (max-width: 599px) {
   #grid-floats .grid-item {
-    width: 97% !important;
+    width: 100% !important;
   }
 
   #grid-flex .grid-item {
-    flex-basis: 97% !important;
+    flex-basis: 100% !important;
   }
 
   .grid-item {
