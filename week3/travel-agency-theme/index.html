@@ -29,7 +29,7 @@
   </head>
 
   <body>
-    <div class="navbar-fixed">
+    <div class="navbar-fixed scrollspy" id="home">
       <nav class="indigo darken-4">
         <div class="container">
           <div class="nav-wrapper">
@@ -101,7 +101,7 @@
       </ul>
     </section>
 
-    <section class="section section-search indigo lighten-4 center scrollspy">
+    <section class="section section-search indigo lighten-4 center scrollspy" id="search">
       <div class="container">
         <div class="row">
           <div class="col s12 m10 offset-m1">
@@ -162,7 +162,7 @@
       </div>
     </section>
 
-    <section class="section section-popular">
+    <section class="section section-popular scrollspy" id="popular">
       <div class="container">
         <div class="row">
           <div class="col s12 center">
@@ -256,7 +256,7 @@
       </div>
     </section>
 
-    <section class="section-gallery">
+    <section class="section-gallery scrollspy" id="gallery">
       <div class="container">
         <div class="row">
           <div class="col s12 center">
@@ -356,7 +356,7 @@
       </div>
     </section>
 
-    <section class="section-contact">
+    <section class="section-contact scrollspy" id="contact">
       <div class="container">
         <div class="row">
           <div class="col s12 m6">
@@ -427,6 +427,7 @@
           },
         });
         $(".materialboxed").materialbox();
+        $(".scrollspy").scrollSpy();
       });
     </script>
   </body>
